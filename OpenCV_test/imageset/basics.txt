@@ -1,0 +1,76 @@
+/////////////////////////////////////////////////////////////////////
+[Sobel Operator]
+
+Edge detection algorithm
+seperates x and y direction
+
+x and y filters:
+        [-1][0][+1]           [+1][+2][+1]
+Gx =    [-2][0][+2]   Gy =    [ 0][ 0][ 0]
+        [-1][0][+1]           [-1][-2][-1]
+
+Calculates 3x3 matrix around center point, assignes the sum of
+each pixel's value multiplied by each value in filter.
+
+ex)
+
+pixels =
+[ 0 ][ 0 ][ 0 ][255][255]
+[ 0 ][ 0 ][ 0 ][255][255]
+[ 0 ][ 0 ][ 0 ][255][255]
+[255][255][255][255][255]
+[255][255][255][255][255]
+
+values after calculation
+
+[Gx, Gy]:
+
+[   ][         ][        ][        ][   ]
+[   ][0,   0   ][1020, 0 ][1020, 0 ][   ]
+[   ][0, -1020 ][765,-765][765,-255][   ]
+[   ][0, -1020 ][255,-765][255,-255][   ]
+[   ][         ][        ][        ][   ]
+
+if pixel has no color change compared to adjacent pixels, the value will be [0,0]
+
+Magnitude of G = sqrt(Gx,Gy) : positive value, always have positive value.
+we can also calculate the angle of direction with given Gx, Gy values.
+
+we use very small kernal (3x3) matrix, so output may contain some noise.
+to reduce this, image can be blurred before conversion.
+
+
+
+/////////////////////////////////////////////////////////////////////
+[Canny Edge detector]
+input of this algorithm is output of Sobel.
+removes unnecessary pixels, returns a edge with single pixel width.
+
+How it's done:
+
+1. find a local maximum.
+    finds neighbour pixel and check if it's local maximum.
+    by given orientation (angle of direction) by sobel, local pixels are selected
+    as perpendicular pixels to direction of traveling edge.
+
+2. remove edges with threshold
+    We have TWO thersholds. (threshold 1 > threshold 2)
+
+         region 1
+
+    /// threshold 1 ///
+
+         region 2
+
+    /// threshold 2 ///
+
+         region 3
+
+    if line's Magnitude is in region 1, it IS considered as edge.
+    if line's magnitude is in region 3, it is NOT considered as edge.
+
+    if line's magnitude is in region 2,
+        if it's connected to edges in region 1, it is considered as edge.
+        if it's NOT connected to edges in region 2, it is NOT considered as edge.
+
+/////////////////////////////////////////////////////////////////////

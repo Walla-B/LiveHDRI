@@ -1,5 +1,6 @@
 import cv2 as cv
 
+'''
 img = cv.imread("C:/Users/dev/Desktop/LiveHDRI/OpenCV_test/imageset/landscape.jpg")
 cv.imshow("landscape", img)
 
@@ -35,3 +36,25 @@ cv.imshow("croppedimg", croppedimg)
 
 print(type(img))
 cv.waitKey(0)
+'''
+
+# testing in videos
+'''
+capture = cv.VideoCapture(0)
+
+# capture each images frame by frame
+# true if captured file exists, and while true, display each captures
+while True:
+    isTrue, frame = capture.read()
+    blurimg = cv.GaussianBlur(frame, (3, 3), cv.BORDER_DEFAULT)
+    cannyimg = cv.Canny(blurimg, 90, 150)
+    dilateimg = cv.dilate(cannyimg, (3, 3), iterations=1)
+
+    cv.imshow('Video', dilateimg)
+    # if Getkey "d", break the loop
+    if cv.waitKey(20) & 0xFF == ord('d'):
+        break
+# free the variable capture's pointer and destroy opened windows
+capture.release()
+cv.destroyAllWindows()
+'''
