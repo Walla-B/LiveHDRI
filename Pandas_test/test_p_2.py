@@ -114,5 +114,12 @@ print(coldata)
 '''
 
 data.insert(3, "51", [4, 7, 10, 13, 16], True)
-print(data)
+print(data, "\n")
 
+# Remove column or row
+# axis = 0 if row, axis = 1 if column
+data.drop(48, axis=1, inplace=True)
+print(data, "\n")
+
+data.drop(3, axis=0, inplace=True)
+print(data)
