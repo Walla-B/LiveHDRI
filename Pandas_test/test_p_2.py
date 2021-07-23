@@ -93,7 +93,6 @@ print(data.iloc[2])
 print(data.loc[2.5])
 data.loc[3] = [10, 11, 12]      # this is possible, add a row with index name 3
 
-
 print(data)
 
 # Adding row with append()
