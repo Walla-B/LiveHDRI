@@ -14,11 +14,13 @@ print(pd.isnull(data))  # row x col dataframe of true/false
 print(np.sum(pd.isnull(data)), "\n")
 
 print(data.describe())
-
-# index input is string, so be careful if there's extra blank in names.
-cutdata = data.loc[:]['LatM']
-print(cutdata)
 '''
+# index input is string, so be careful if there's extra blank in names.
+print("LatM\n")
+# cutdata = data['LatM'] # same as data.loc[:]['LatM'] , data.loc[:, 'LatM']
+cutdata = data.iloc[0][1:6]  # same as data.iloc[0, 1:6]
+print(cutdata)
+
 
 # groupby() function works when datas are numbers
 grouped_data = data.loc[:, ['LatM', 'LonD']].groupby('LatM').mean()
