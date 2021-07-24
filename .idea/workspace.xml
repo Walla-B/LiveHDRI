@@ -43,7 +43,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.test_p_4">
+  <component name="RunManager" selected="Python.test_p_5">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="LiveHDRI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,8 +148,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_p_5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LiveHDRI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pandas_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pandas_test/test_p_5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_p_5" />
         <item itemvalue="Python.test_p_4" />
         <item itemvalue="Python.test_p_3" />
         <item itemvalue="Python.test_p_2" />
@@ -167,7 +187,7 @@
       <updated>1626876216259</updated>
       <workItem from="1626876217572" duration="2651000" />
       <workItem from="1626935675913" duration="25361000" />
-      <workItem from="1627039676397" duration="9811000" />
+      <workItem from="1627039676397" duration="19858000" />
     </task>
     <servers />
   </component>
