@@ -3,7 +3,14 @@ import numpy as np
 
 # replace ('something', 'to', regex=True) replaces string 'somrthing' to 'to'.
 data = pd.read_csv("C:/Users/dev/Downloads/tempa.csv", sep=',', encoding='utf-8')
-# removequote = data.replace('"', '', regex=True)
+# i don't think thiw one works. dataframe cannot be directly modified using str.replace or str.strip
+# str.strip() removes first and las whitespaces.
+# removequote = data.replace('"', '', regex=True, inplace=True)
+
+# Alternative:
+# df["height"] = df["height"].str.strip()
+# or
+# pd.read_csv(..., converters={'height':str.strip})
 print(data)
 '''
 # first five datas
