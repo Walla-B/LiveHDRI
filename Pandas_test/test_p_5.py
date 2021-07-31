@@ -45,4 +45,4 @@ for i in df.index:
 
 print(df)
 
-df.to_csv("C:/Users/dev/Desktop/2010pandas.csv",sep=',',na_rep='Nan',encoding='EUC-KR')
+df.to_csv("C:/Users/dev/Desktop/2010pandas.csv", sep=',', na_rep='Nan', encoding='EUC-KR')
