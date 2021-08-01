@@ -25,8 +25,6 @@ threshold = .60
 yloc, xloc = np.where(result >= threshold)
 print(len(xloc))
 
-for (x, y) in zip(xloc, yloc):
-    cv.rectangle(dangles, (x - 5, y - 5), (x + w + 5, y + h + 5), color=(255, 0, 0), thickness=1)
 
 rectangles = []
 for (x, y) in zip(xloc, yloc):
@@ -37,6 +35,11 @@ for (x, y) in zip(xloc, yloc):
 rectangles, weights = cv.groupRectangles(rectangles, 1, 0.2)
 
 print(len(rectangles))
+
+for (x, y, w, h) in rectangles:
+    cv.rectangle(dangles, (x - 5, y - 5), (x + w + 5, y + h + 5), color=(255, 0, 0), thickness=1)
+    prob = str(round(result[y, x], 2))
+    cv.putText(dangles, prob, fontFace=cv.QT_FONT_NORMAL, fontScale=0.3, thickness=1, color=(255, 0, 0), org=(x-5, y-10))
 
 cv.imshow("img", dangles)
 
