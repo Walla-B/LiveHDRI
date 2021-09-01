@@ -32,8 +32,7 @@ while True:
 
     min_val, max_val, min_loc, max_loc = cv.minMaxLoc(result)
 
-    print(max_loc)
-    print(max_val)
+    print('Max_location : ' + str(max_loc) + 'Max_val : ' + str(max_val))
 
     w = danglesample.shape[1]
     h = danglesample.shape[0]
@@ -41,7 +40,6 @@ while True:
     threshold = .60
 
     yloc, xloc = np.where(result >= threshold)
-    print(len(xloc))
 
     rectangles = []
     for (x, y) in zip(xloc, yloc):
@@ -51,7 +49,7 @@ while True:
 
     rectangles, weights = cv.groupRectangles(rectangles, 1, 0.2)
 
-    print(len(rectangles))
+    print(str(len(rectangles)) + ' dangles found')
 
     for (x, y, w, h) in rectangles:
         cv.rectangle(dangles, (x - 5, y - 5), (x + w + 5, y + h + 5), color=(255, 0, 0), thickness=1)
@@ -63,6 +61,7 @@ while True:
 
     # debug the loop rate
     print('FPS {}'.format(1 / (time() - loop_time)))
+    print('\n')
     loop_time = time()
 
     # press 'q' with the output window focused to exit.
