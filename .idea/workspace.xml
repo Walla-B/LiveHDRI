@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -159,6 +159,9 @@
       <module name="LiveHDRI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyAutoGUI_test" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -201,7 +204,24 @@
       <workItem from="1627998099926" duration="678000" />
       <workItem from="1629447262461" duration="612000" />
       <workItem from="1629743429242" duration="374000" />
-      <workItem from="1630506683806" duration="1349000" />
+      <workItem from="1630506683806" duration="2129000" />
+      <workItem from="1630588408731" duration="660000" />
+      <workItem from="1640945878163" duration="729000" />
+      <workItem from="1640946621717" duration="3900000" />
+      <workItem from="1640973335848" duration="1062000" />
+      <workItem from="1641052565473" duration="4378000" />
+      <workItem from="1641130478608" duration="523000" />
+      <workItem from="1641131066596" duration="637000" />
+      <workItem from="1641131784411" duration="450000" />
+      <workItem from="1641132345950" duration="5997000" />
+      <workItem from="1641193437458" duration="8156000" />
+      <workItem from="1641203166667" duration="2333000" />
+      <workItem from="1641205986661" duration="2367000" />
+      <workItem from="1641208658225" duration="1176000" />
+      <workItem from="1641210070911" duration="569000" />
+      <workItem from="1641210655176" duration="247000" />
+      <workItem from="1641375693590" duration="1223000" />
+      <workItem from="1641449755927" duration="717000" />
     </task>
     <servers />
   </component>

@@ -39,7 +39,6 @@ cv.waitKey(0)
 '''
 
 # testing in videos
-'''
 capture = cv.VideoCapture(0)
 
 # capture each images frame by frame
@@ -57,4 +56,3 @@ while True:
 # free the variable capture's pointer and destroy opened windows
 capture.release()
 cv.destroyAllWindows()
-'''
