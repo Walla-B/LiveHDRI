@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a386991d-a0ed-4fc5-8b88-88401ae824a5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +45,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -263,7 +266,12 @@
       <workItem from="1644230161826" duration="3093000" />
       <workItem from="1644400386312" duration="6071000" />
       <workItem from="1644472628045" duration="1561000" />
-      <workItem from="1644474961379" duration="916000" />
+      <workItem from="1644474961379" duration="10645000" />
+      <workItem from="1644561301163" duration="3800000" />
+      <workItem from="1644654195345" duration="955000" />
+      <workItem from="1644924268429" duration="601000" />
+      <workItem from="1645517613130" duration="4675000" />
+      <workItem from="1645525135623" duration="8009000" />
     </task>
     <servers />
   </component>
