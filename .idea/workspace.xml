@@ -45,7 +45,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -274,7 +274,9 @@
       <workItem from="1645525135623" duration="8397000" />
       <workItem from="1645544697915" duration="688000" />
       <workItem from="1645696026706" duration="7622000" />
-      <workItem from="1645781741207" duration="5608000" />
+      <workItem from="1645781741207" duration="10416000" />
+      <workItem from="1645885520352" duration="11031000" />
+      <workItem from="1645907812852" duration="876000" />
     </task>
     <servers />
   </component>
